@@ -1,0 +1,122 @@
+Размещение на github статического сайта
+
+Создание файла отчёт html в папке Homerwork7
+лара@LAPTOP-C9HFV6C4 MINGW64 ~/Homework7 (main)
+$ echo "Размещение на github статического сайта" > otchot_html.txt
+
+Открытие файла в Visual Studio Code
+лара@LAPTOP-C9HFV6C4 MINGW64 ~/Homework7 (main)
+$ code .
+
+Переход из папки homework7 в папку c/Users
+лара@LAPTOP-C9HFV6C4 MINGW64 ~/Homework7 (main)
+$ cd ../..
+
+Переход в папку с
+лара@LAPTOP-C9HFV6C4 MINGW64 /c/Users
+$ cd ..
+
+Переход в папку html
+лара@LAPTOP-C9HFV6C4 MINGW64 /c
+$ cd html
+
+Переход в папку homework
+лара@LAPTOP-C9HFV6C4 MINGW64 /c/html
+$ cd homework
+
+Создание репозитория
+лара@LAPTOP-C9HFV6C4 MINGW64 /c/html/homework
+$ git init
+Initialized empty Git repository in C:/html/homework/.git/
+
+Переименование ветки
+лара@LAPTOP-C9HFV6C4 MINGW64 /c/html/homework (master)
+$ git branch -m main
+
+Проверка статуса 
+лара@LAPTOP-C9HFV6C4 MINGW64 /c/html/homework (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        about.txt
+        android-chrome-192x192.png
+        android-chrome-512x512.png
+        apple-touch-icon.png
+        audio/
+        favicon-16x16.png
+        favicon-32x32.png
+        favicon.ico
+        images/
+        scripts/
+        site.webmanifest
+        style/
+        video/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Добавление в staging area фаайлов в папке homework на ветке main
+лара@LAPTOP-C9HFV6C4 MINGW64 /c/html/homework (main)
+$ git add .
+warning: in the working copy of 'about.txt', LF will be replaced by CRLF the next time Git touches it
+
+Перенос содержимого папки в локальный репозиторий
+лара@LAPTOP-C9HFV6C4 MINGW64 /c/html/homework (main)
+$ git commit -m "commit1 создание репозитория на локальном диске в папке homework"[main (root-commit) 662a56a] commit1 создание репозитория на локальном диске в папке homework
+ 17 files changed, 279 insertions(+)
+ create mode 100644 about.txt
+ create mode 100644 android-chrome-192x192.png
+ create mode 100644 android-chrome-512x512.png
+ create mode 100644 apple-touch-icon.png
+ create mode 100644 audio/TWICE_FANCY.mp3
+ create mode 100644 favicon-16x16.png
+ create mode 100644 favicon-32x32.png
+ create mode 100644 favicon.ico
+ create mode 100644 images/a6aeb8b1c0a229e2a42df7b70688b8c0.jpg
+ create mode 100644 images/df61ae4c07a262ca5ee91d966e3ec740.jpg
+ create mode 100644 scripts/audio.html
+ create mode 100644 scripts/home.html
+ create mode 100644 scripts/photo.html
+ create mode 100644 scripts/video.html
+ create mode 100644 site.webmanifest
+ create mode 100644 style/style.css
+ create mode 100644 video/TWICE _FANCY_ M_V.mp4
+
+Просмотр commits
+лара@LAPTOP-C9HFV6C4 MINGW64 /c/html/homework (main)
+$ git log
+commit 662a56a8456a904fdb75d06eae191ca412cd4561 (HEAD -> main)
+Author: larisa kichigina <2kichigina.lara4@gmail.com>
+Date:   Sun Nov 27 20:30:28 2022 +0300
+
+    commit1 создание репозитория на локальном диске в папке homework
+
+Добавление удалённого репозитория 
+лара@LAPTOP-C9HFV6C4 MINGW64 /c/html/homework (main)
+$ git remote add origin https://github.com/Larisa143/html_homework.git
+
+Проверка результатов добавления удалённого репозитория (связи)
+лара@LAPTOP-C9HFV6C4 MINGW64 /c/html/homework (main)
+$ git remote -vv
+origin  https://github.com/Larisa143/html_homework.git (fetch)
+origin  https://github.com/Larisa143/html_homework.git (push)
+
+Перенос репозитория на github
+лара@LAPTOP-C9HFV6C4 MINGW64 /c/html/homework (main)
+$ git push -u origin main
+Enumerating objects: 24, done.
+Counting objects: 100% (24/24), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (21/21), done.
+Writing objects: 100% (24/24), 90.53 MiB | 568.00 KiB/s, done.
+Total 24 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+remote: warning: See http://git.io/iEPt8g for more information.
+remote: warning: File video/TWICE _FANCY_ M_V.mp4 is 82.46 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+To https://github.com/Larisa143/html_homework.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
