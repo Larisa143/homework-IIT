@@ -113,3 +113,37 @@ commit faf06c31798118b69c6be87c24204baef11d73d5
 Author: larisa kichigina <2kichigina.lara4@gmail.com>
 Date:   Sun Nov 27 18:45:00 2022 +0300
     commit1
+
+Перенос файла из рабочей директории в staging area
+лара@LAPTOP-C9HFV6C4 MINGW64 ~/Homework7 (second)
+$ git add .
+warning: in the working copy of 'Otchot7.txt', LF will be replaced by CRLF the next time Git touches it
+
+создание commit4
+лара@LAPTOP-C9HFV6C4 MINGW64 ~/Homework7 (second)
+$ git commit -m "Commit4 Отчёт версия 4 - создание commit3"
+[second f9a2677] Commit4 Отчёт версия 4 - создание commit3
+ 1 file changed, 29 insertions(+)
+
+Просмотр commits
+лара@LAPTOP-C9HFV6C4 MINGW64 ~/Homework7 (second)
+$ git log
+commit f9a267798b5ec5ca5101e4b83f2162fe099cebfc (HEAD -> second)
+Author: larisa kichigina <2kichigina.lara4@gmail.com>
+Date:   Sun Nov 27 19:03:48 2022 +0300
+    Commit4 Отчёт версия 4 - создание commit3
+
+commit 0ab8494e01699aaff04333313d72ae20e57aa346
+Author: larisa kichigina <2kichigina.lara4@gmail.com>
+Date:   Sun Nov 27 18:58:05 2022 +0300
+    Commit3 Отчёт версия 3 создание Commit2
+
+commit c25d33810f043489fe2c9695b884e3dd8ad0ec05 (master)
+Author: larisa kichigina <2kichigina.lara4@gmail.com>
+Date:   Sun Nov 27 18:51:05 2022 +0300
+    Commit2 Отчёт версия 2 создание Commit1
+
+commit faf06c31798118b69c6be87c24204baef11d73d5
+Author: larisa kichigina <2kichigina.lara4@gmail.com>
+Date:   Sun Nov 27 18:45:00 2022 +0300
+    commit1
