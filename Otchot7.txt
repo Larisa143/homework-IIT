@@ -294,3 +294,33 @@ Date:   Sun Nov 27 18:45:00 2022 +0300
     commit1
 
 В commit7 сохранены изменения по созданию commit6 
+
+Добавляем удалённый репозиторий под именем origin (папка Homerwork7, ветка master)
+лара@LAPTOP-C9HFV6C4 MINGW64 ~/Homework7 (master)
+$ git remote add origin https://github.com/Larisa143/homework-IIT.git
+
+Переименование ветки master в main
+лара@LAPTOP-C9HFV6C4 MINGW64 ~/Homework7 (master)
+$ git branch -m main
+
+Проверка результатов добавления удалённого репозитория (связи для загрузки и выгрузки)
+лара@LAPTOP-C9HFV6C4 MINGW64 ~/Homework7 (main)
+$ git remote -vv
+origin  https://github.com/Larisa143/homework-IIT.git (fetch)
+origin  https://github.com/Larisa143/homework-IIT.git (push)
+
+Перенос репозитория с локального диска на github
+лара@LAPTOP-C9HFV6C4 MINGW64 ~/Homework7 (main)
+$ git push -u origin main
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (21/21), 3.43 KiB | 702.00 KiB/s, done.
+Total 21 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), done.
+To https://github.com/Larisa143/homework-IIT.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+commit8 отчёт с переносом на github
