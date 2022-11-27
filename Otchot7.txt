@@ -324,3 +324,18 @@ To https://github.com/Larisa143/homework-IIT.git
 branch 'main' set up to track 'origin/main'.
 
 commit8 отчёт с переносом на github
+
+Перенос изменений на github
+лара@LAPTOP-C9HFV6C4 MINGW64 ~/Homework7 (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 951 bytes | 237.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Larisa143/homework-IIT.git
+   23ac635..f639f98  main -> main
+
+commit9 отчёт с переносом изменений на github
