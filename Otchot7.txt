@@ -1,0 +1,28 @@
+Отчёт по выполнению практической работы
+
+Вызов названия текущей папаки
+лара@LAPTOP-C9HFV6C4 MINGW64 ~
+$ pwd
+/c/Users/лара
+
+Создание новой папки Homerwork7
+лара@LAPTOP-C9HFV6C4 MINGW64 ~
+$ mkdir "Homework7"
+
+Переход в папку Homerwork7
+лара@LAPTOP-C9HFV6C4 MINGW64 ~
+$ cd Homework7
+
+Создание локального репозитория в папке Homerwork7
+лара@LAPTOP-C9HFV6C4 MINGW64 ~/Homework7
+$ git init
+Initialized empty Git repository in C:/Users/лара/Homework7/.git/
+
+Создание файла Otchot7
+лара@LAPTOP-C9HFV6C4 MINGW64 ~/Homework7 (master)
+$ echo "Отчёт по выполнению практической работы" >Otchot7.txt
+
+Открытие файла в Visual Studio Code
+лара@LAPTOP-C9HFV6C4 MINGW64 ~/Homework7 (master)
+$ code .
+
