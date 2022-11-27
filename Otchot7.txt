@@ -55,3 +55,32 @@ commit faf06c31798118b69c6be87c24204baef11d73d5 (HEAD -> master)
 Author: larisa kichigina <2kichigina.lara4@gmail.com>
 Date:   Sun Nov 27 18:45:00 2022 +0300
     commit1
+
+Перенос файла из рабочей директории в staging area
+лара@LAPTOP-C9HFV6C4 MINGW64 ~/Homework7 (master)
+$ git add .
+warning: in the working copy of 'Otchot7.txt', LF will be replaced by CRLF the next time Git touches it
+
+создание commit2
+лара@LAPTOP-C9HFV6C4 MINGW64 ~/Homework7 (master)
+$ git commit -m "Commit2 Отчёт версия 2 создание Commit1"
+[master c25d338] Commit2 Отчёт версия 2 создание Commit1
+ 1 file changed, 29 insertions(+)
+
+Просмотр commits
+лара@LAPTOP-C9HFV6C4 MINGW64 ~/Homework7 (master)
+$ git log
+commit c25d33810f043489fe2c9695b884e3dd8ad0ec05 (HEAD -> master)
+Author: larisa kichigina <2kichigina.lara4@gmail.com>
+Date:   Sun Nov 27 18:51:05 2022 +0300
+    Commit2 Отчёт версия 2 создание Commit1
+
+commit faf06c31798118b69c6be87c24204baef11d73d5
+Author: larisa kichigina <2kichigina.lara4@gmail.com>
+Date:   Sun Nov 27 18:45:00 2022 +0300
+    commit1
+
+Создание и переход на ветку second
+лара@LAPTOP-C9HFV6C4 MINGW64 ~/Homework7 (master)
+$ git checkout -b "second"
+Switched to a new branch 'second'
